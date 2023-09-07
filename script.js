@@ -26,7 +26,7 @@ function login(){
     const loginButton = document.getElementById('login-button');
     loginButton.addEventListener('click', () => {
         // Redirect to Spotify login page
-        window.location.href = '${AUTH_URL}?client_id=${CLIENT_ID}&response_type=code&redirect_uri=${REDIRECT_URI}&scope=user-top-read';
+        window.location.href = 'https://accounts.spotify.com/authorize?client_id=17e9317ddf094191980af02c9b80d25e&response_type=code&redirect_uri=https://na-raghavan.github.io/SpotiBoxd/&scope=user-top-read&state=STATE';
     });
 }
 // After user logs in and is redirected back, parse the code from the URL and exchange it for an access token
