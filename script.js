@@ -32,8 +32,8 @@ function login(){
 // After user logs in and is redirected back, parse the code from the URL and exchange it for an access token
 const urlParams = new URLSearchParams(window.location.search);
 const code = urlParams.get('code');
+document.write(code)
 if (code) {
-
     const accessToken = code;
     
     // Make an API request to get the user's top tracks
